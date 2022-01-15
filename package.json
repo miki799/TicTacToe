@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/miki799/TicTacToe/issues"
   },
-  "homepage": "https://github.com/miki799/TicTacToe#readme"
+  "homepage": "https://github.com/miki799/TicTacToe#readme",
+  "dependencies": {
+    "sass": "^1.48.0"
+  }
 }

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2df8de0f65.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/app.css">
-    <title>Tic-Tac-Toe</title>
-</head>
-<body>
-    <div class="board">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2df8de0f65.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles/css/index.css" />
+    <link rel="stylesheet" href="src/styles/css/app.css" />
+    <link rel="stylesheet" href="src/styles/css/control.css" />
+    <link rel="stylesheet" href="src/styles/css/board.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tic-Tac-Toe</h1>
+      <div class="board">
         <div class="box fa" data-row="0" data-column="0"></div>
         <div class="box fa" data-row="0" data-column="1"></div>
         <div class="box fa" data-row="0" data-column="2"></div>
@@ -19,7 +26,19 @@
         <div class="box fa" data-row="2" data-column="0"></div>
         <div class="box fa" data-row="2" data-column="1"></div>
         <div class="box fa" data-row="2" data-column="2"></div>
+      </div>
+      <div class="inner-container">
+        <div>
+          <h2>ROUND</h2>
+          <h3 id="round"></h3>
+        </div>
+        <div>
+          <h2>MOVE</h2>
+          <h3 id="move">X</h3>
+        </div>
+      </div>
+      <button id="reset">RESET</button>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

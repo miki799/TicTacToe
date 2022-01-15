@@ -1,6 +1,7 @@
 const PLAYER_1 = "fa-circle"; // odd rounds
 const PLAYER_2 = "fa-times"; // even rounds
-let round = 1;
+let round = 0;
+document.getElementById("round").innerHTML = round.toString();
 const board = [
   ["", "", ""],
   ["", "", ""],
@@ -27,6 +28,7 @@ function pickBox(event) {
   event.target.classList.add(turn);
   board[row][column] = turn;
   round++;
+  document.getElementById("round").innerHTML = round.toString();
   let result = checkWinner();
   console.log(result);
 }

@@ -1,0 +1,8 @@
+.container {
+  margin: 25px;
+  display: grid;
+  grid-auto-rows: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 15px;
+}
