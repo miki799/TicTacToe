@@ -1,6 +1,8 @@
+@use "_utils.scss" as *;
+
 .board {
   width: 350px;
-  background-color: #457eac;
+  background-color: $board-color;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 117px);
@@ -8,20 +10,14 @@
   cursor: pointer;
 
   .box {
-    background-color: #92c6f0;
+    background-color: $box-color;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: #222;
+    color: $font-color;
     &:hover {
-      background-color: #66b0ec;
+      background-color: $box-hover-color;
     }
-  }
-
-  .fa-circle::before {
-  }
-
-  .fa-times::before {
   }
 }

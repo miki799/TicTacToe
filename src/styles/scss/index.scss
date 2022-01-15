@@ -1,9 +1,10 @@
+@use "_utils.scss" as *;
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap");
 
 body {
-  font-family: "Prompt", sans-serif;
+  font-family: $font-stack;
   font-size: 10px;
-  background-color: #457eac;
+  background-color: $bgd-color;
 }
 
 *,
@@ -13,20 +14,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
   padding: 0px;
-  color: #f0f0f0;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
+  color: $font-color;
 }
 
 h2 {
   font-size: 2.5em;
   text-align: center;
+  color: $font-color;
 }
 
 h3 {
   font-size: 1.6em;
   text-align: center;
+  color: $font-color;
 }

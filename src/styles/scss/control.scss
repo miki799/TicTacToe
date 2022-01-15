@@ -1,3 +1,5 @@
+@use "_utils.scss" as *;
+
 .inner-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -11,4 +13,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#reset {
+  padding: 15px;
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 2em;
+  font-family: $font-stack;
+  font-weight: 700;
+  border: 0px;
+  border-radius: 5px;
+  background-color: $box-color;
+  &:hover {
+    background-color: $box-hover-color;
+  }
 }
